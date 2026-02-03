@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { api } from "../api";
-
+import logo from "./logo.jpg";
 export default function Dashboard() {
   const nav = useNavigate();
   const [flights, setFlights] = useState([]);
@@ -111,7 +111,14 @@ export default function Dashboard() {
           <tbody>
             {filtered.map((f) => (
               <tr key={f.id}>
-                <td>{f.logoUrl ? <img alt="logo" src={f.logoUrl} width="40" /> : "—"}</td>
+                <td>
+  <img
+    alt="logo"
+    src={f.logoUrl || logo}
+    width="40"
+  />
+</td>
+
                 <td>{f.flightNo}</td>
                 <td>{f.source}</td>
                 <td>{f.destination}</td>

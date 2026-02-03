@@ -1,0 +1,18 @@
+/* ===============================
+   Tables (Admin UI)
+   =============================== */
+
+table {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+}
+
+td {
+  color: #e5e7eb;
+}

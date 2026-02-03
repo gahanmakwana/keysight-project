@@ -1,0 +1,29 @@
+/* ===============================
+   Forms (Professional, Safe)
+   =============================== */
+
+form {
+  background-color: #020617;
+  padding: 24px;
+  border-radius: 10px;
+  border: 1px solid #1e293b;
+}
+
+label {
+  font-size: 13px;
+  color: #94a3b8;
+  margin-bottom: 6px;
+  display: block;
+}
+
+input, select {
+  background-color: #020617;
+}
+
+button.primary {
+  background-color: #2563eb;
+}
+
+button.primary:hover {
+  background-color: #1d4ed8;
+}
